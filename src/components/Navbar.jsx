@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HashLink } from "react-router-hash-link";
+import { Link as ScrollLink } from "react-scroll";
 import { profile } from "../assets/assetsindex.js";
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion } from "framer-motion";
@@ -24,9 +24,11 @@ const Navbar = () => {
       {/* Navbar top row: Profile + Name + Menu */}
       <div className="max-w-[1600px] mx-auto flex justify-between items-center w-full py-4 px-4 sm:px-6 md:px-8">
         {/* Profile + Name */}
-        <HashLink
-          smooth
-          to="/#home"
+        <ScrollLink
+          to="home"
+          smooth={true}
+          duration={700}
+          offset={-80}
           className="flex items-center space-x-3 hover:cursor-pointer"
           onClick={closeMenu}>
           <img
@@ -37,29 +39,57 @@ const Navbar = () => {
           <span className="font-winky text-xl sm:text-2xl font-bold text-gray-800 tracking-wide hover:text-[#9929EA]">
             Shivraj Desai
           </span>
-        </HashLink>
+        </ScrollLink>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-12 text-gray-900 font-medium font-winky text-lg uppercase ">
           <li>
-            <HashLink smooth to="/#home" className="hover:text-[#9929EA]">
+            <ScrollLink
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-80}
+              className="hover:text-[#9929EA] cursor-pointer"
+            >
               Home
-            </HashLink>
+            </ScrollLink>
           </li>
           <li>
-            <HashLink smooth to="/#about" className="hover:text-[#9929EA]">
+            <ScrollLink
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-80}
+              className="hover:text-[#9929EA] cursor-pointer"
+            >
               About
-            </HashLink>
+            </ScrollLink>
           </li>
           <li>
-            <HashLink smooth to="/#projects" className="hover:text-[#9929EA]">
+            <ScrollLink
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-80}
+              className="hover:text-[#9929EA] cursor-pointer"
+            >
               Projects
-            </HashLink>
+            </ScrollLink>
           </li>
           <li>
-            <HashLink smooth to="/#contact" className="hover:text-[#9929EA]">
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-80}
+              className="hover:text-[#9929EA] cursor-pointer"
+            >
               Contact
-            </HashLink>
+            </ScrollLink>
           </li>
         </ul>
 
@@ -78,40 +108,52 @@ const Navbar = () => {
           {/* Mobile Links */}
           <ul className="text-gray-800 font-winky text-base uppercase divide-y divide-gray-300 text-right">
             <li>
-              <HashLink
-                smooth
-                to="/#home"
+              <ScrollLink
+                to="home"
+                smooth={true}
+                duration={700}
+                offset={-80}
                 onClick={closeMenu}
-                className="block px-6 py-4 hover:text-[#9929EA]">
+                className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer"
+              >
                 Home
-              </HashLink>
+              </ScrollLink>
             </li>
             <li>
-              <HashLink
-                smooth
-                to="/#about"
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={700}
+                offset={-80}
                 onClick={closeMenu}
-                className="block px-6 py-4 hover:text-[#9929EA]">
+                className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer"
+              >
                 About
-              </HashLink>
+              </ScrollLink>
             </li>
             <li>
-              <HashLink
-                smooth
-                to="/#projects"
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={700}
+                offset={-80}
                 onClick={closeMenu}
-                className="block px-6 py-4 hover:text-[#9929EA]">
+                className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer"
+              >
                 Projects
-              </HashLink>
+              </ScrollLink>
             </li>
             <li>
-              <HashLink
-                smooth
-                to="/#contact"
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={700}
+                offset={-80}
                 onClick={closeMenu}
-                className="block px-6 py-4 hover:text-[#9929EA]">
+                className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer"
+              >
                 Contact
-              </HashLink>
+              </ScrollLink>
             </li>
           </ul>
         </div>

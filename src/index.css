@@ -3,3 +3,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Add this in your global CSS file or a CSS module */
+.bg-desktop-only {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  } 
+  @media (max-width: 767px) {
+    .bg-desktop-only {
+      background-image: none !important;
+    }
+  }
+  

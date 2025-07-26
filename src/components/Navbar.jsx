@@ -49,7 +49,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={700}
-              offset={-80}
+              offset={-50}
               className="hover:text-[#9929EA] cursor-pointer"
             >
               Home
@@ -61,7 +61,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={700}
-              offset={-80}
+              offset={-50}
               className="hover:text-[#9929EA] cursor-pointer"
             >
               About
@@ -73,7 +73,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={700}
-              offset={-80}
+              offset={-50}
               className="hover:text-[#9929EA] cursor-pointer"
             >
               Projects
@@ -85,7 +85,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={700}
-              offset={-80}
+              offset={-50}
               className="hover:text-[#9929EA] cursor-pointer"
             >
               Contact

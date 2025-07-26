@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { aboutbg } from "../assets/assetsindex";
-import { sendEmail } from "../emailService";
+import { sendEmail } from "../EmailService";
 
 const Contact = () => {
   const formRef = useRef();

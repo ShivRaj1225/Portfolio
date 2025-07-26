@@ -60,7 +60,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={700}
-              offset={-5}
+              offset={-15}
               className="hover:text-[#9929EA] cursor-pointer">
               About
             </ScrollLink>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 to="home"
                 smooth={true}
                 duration={700}
-                offset={-30}
+                offset={-10}
                 onClick={closeMenu}
                 className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer">
                 Home
@@ -119,7 +119,7 @@ const Navbar = () => {
                 to="about"
                 smooth={true}
                 duration={700}
-                offset={-30}
+                offset={-10}
                 onClick={closeMenu}
                 className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer">
                 About
@@ -130,7 +130,7 @@ const Navbar = () => {
                 to="projects"
                 smooth={true}
                 duration={700}
-                offset={-30}
+                offset={-10}
                 onClick={closeMenu}
                 className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer">
                 Projects
@@ -141,7 +141,7 @@ const Navbar = () => {
                 to="contact"
                 smooth={true}
                 duration={700}
-                offset={-30}
+                offset={-10}
                 onClick={closeMenu}
                 className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer">
                 Contact

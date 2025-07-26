@@ -60,7 +60,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={700}
-              offset={-30}
+              offset={-5}
               className="hover:text-[#9929EA] cursor-pointer">
               About
             </ScrollLink>

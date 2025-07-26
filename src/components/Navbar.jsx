@@ -60,7 +60,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={700}
-              offset={-15}
+              offset={-16}
               className="hover:text-[#9929EA] cursor-pointer">
               About
             </ScrollLink>
@@ -141,7 +141,7 @@ const Navbar = () => {
                 to="contact"
                 smooth={true}
                 duration={700}
-                offset={-10}
+                offset={-5}
                 onClick={closeMenu}
                 className="block px-6 py-4 hover:text-[#9929EA] cursor-pointer">
                 Contact

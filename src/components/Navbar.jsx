@@ -22,7 +22,7 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="bg-white shadow-md fixed w-full z-50 top-0 left-0 overflow-x-hidden">
       {/* Navbar top row: Profile + Name + Menu */}
-      <div className="flex justify-between items-center w-full  py-4 max-w-[1600px] md:ml-8 pl-4 pr-8">
+      <div className="max-w-[1600px] mx-auto flex justify-between items-center w-full py-4 px-4 sm:px-6 md:px-8">
         {/* Profile + Name */}
         <HashLink
           smooth

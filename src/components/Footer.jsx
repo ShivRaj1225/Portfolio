@@ -17,8 +17,7 @@ const Footer = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
+      transition={{ duration: 0.6, ease: "easeOut" }}>
       <div className="mx-auto px-6 md:px-24 flex flex-col md:flex-row justify-between items-start gap-y-10">
         {/* Right Side: Socials - show on top on mobile */}
         <div className="w-full md:w-1/2 flex md:justify-end order-1 md:order-2 opacity-90">
@@ -62,7 +61,7 @@ const Footer = () => {
       <div className="flex justify-center items-center mt-3 text-sm opacity-60">
         Made by
         <a
-          href="https://your-portfolio-link.com"
+          href="https://portfolio-lake-kappa-23.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm text-white hover:underline hover:text-[#9929EA] transition underline ml-1">
